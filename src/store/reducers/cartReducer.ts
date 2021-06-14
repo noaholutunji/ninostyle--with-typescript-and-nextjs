@@ -101,14 +101,6 @@ const decreaseQuantity = (
   }
 };
 
-// type Action = {
-//   _id: string;
-//   quantity: number;
-//   price: string
-// }
-
-// { _id: string; quantity: number; price: string | number; }
-
 const cart = (
   state = initState,
   action: {

@@ -10,9 +10,6 @@ import {
   MDBCardImage,
   MDBCardTitle,
   MDBCardText,
-  // MDBTooltip,
-  MDBCardFooter,
-  MDBIcon
 } from 'mdbreact';
 
 interface IntProps {

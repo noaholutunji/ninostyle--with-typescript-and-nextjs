@@ -1,14 +1,14 @@
-import CheckOut from '../src/containers/CheckOut/CheckOut';
+import CheckOutPage from '../src/containers/CheckOut/CheckOut';
 import { authInitialProps } from '../src/lib/auth';
 
-const CheckOutPage = () => {
+const CheckOut = () => {
   return (
     <>
-      <CheckOut />
+      <CheckOutPage />
     </>
   );
 };
 
-CheckOutPage.getInitialProps = authInitialProps(true, '/login');
+CheckOut.getInitialProps = authInitialProps(true, '/login');
 
-export default CheckOutPage;
+export default CheckOut;

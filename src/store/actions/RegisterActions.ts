@@ -22,11 +22,3 @@ export function userRegisterRequest(data: any) {
     dispatch(setCurrentUser(jwt.decode(token)));
   };
 }
-
-// import axios from '../../axios-orders';
-
-// export function userRegisterRequest(userData) {
-//   return dispatch => {
-//     return axios.post('/register', userData);
-//   };
-// }

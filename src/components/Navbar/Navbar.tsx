@@ -10,7 +10,6 @@ import {
   MDBNavbarBrand,
   MDBNavbarNav,
   MDBNavItem,
-  // MDBNavLink,
   MDBNavbarToggler,
   MDBCollapse,
   MDBDropdown,

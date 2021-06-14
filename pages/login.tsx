@@ -1,11 +1,11 @@
-import Login from '../src/containers/Login/Login';
+import LoginPage from '../src/containers/Login/Login';
 
-const Signup = () => {
+const Login = () => {
   return (
     <>
-      <Login />
+      <LoginPage />
     </>
   );
 };
 
-export default Signup;
+export default Login;

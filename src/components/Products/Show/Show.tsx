@@ -50,7 +50,6 @@ const Products = (props: any) => {
   }, []);
 
   const tabRow = () => {
-    // console.log(user._id);
     return (
       product && (
         <Table obj={product} userId={user && user._id} key={product._id} />

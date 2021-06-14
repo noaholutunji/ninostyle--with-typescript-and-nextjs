@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBBtn, MDBCard, MDBCardBody, MDBCol } from 'mdbreact';
+import { MDBCard, MDBCardBody, MDBCol } from 'mdbreact';
 
 const OrderSuccess = () => {
   return (

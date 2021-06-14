@@ -1,5 +1,4 @@
 import React, { useState, SyntheticEvent } from 'react';
-import { Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Router from 'next/router';
 import cookie from 'js-cookie';
@@ -18,7 +17,6 @@ import {
 export const Login = props => {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
-  // const [redirect, setRedirect] = useState(false);
 
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) =>
     setEmail(event.target.value);
@@ -33,7 +31,6 @@ export const Login = props => {
     };
     try {
       await props.login(data);
-      // setRedirect(true);
       Router.push('/products');
     } catch (error) {
       console.log(error);

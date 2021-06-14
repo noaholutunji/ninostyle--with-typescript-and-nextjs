@@ -4,7 +4,6 @@ import { createProduct } from '../../store/actions/productActions';
 import PropTypes from 'prop-types';
 import Router from 'next/router';
 import Footer from '../../components/Footer/Footer';
-// import { Redirect } from 'react-router-dom';
 import {
   MDBContainer,
   MDBRow,
@@ -21,7 +20,6 @@ const NewProduct = props => {
   const [price, setPrice] = useState<string>('');
   const [image, setImage] = useState<string>('');
   const [description, setDescription] = useState<string>('');
-  // const [redirect, setRedirect] = useState(false);
 
   const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) =>
     setName(event.target.value);
@@ -52,10 +50,6 @@ const NewProduct = props => {
       console.log(error);
     }
   };
-
-  // if (redirect) {
-  //   return <Redirect to={'/products'} />;
-  // }
 
   return (
     <>

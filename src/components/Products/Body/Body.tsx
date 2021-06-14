@@ -10,8 +10,6 @@ import {
   MDBCardBody,
   MDBCardImage,
   MDBCardTitle,
-  MDBCardFooter
-  // MDBTooltip
 } from 'mdbreact';
 
 type Product = {
@@ -99,5 +97,3 @@ export default connect(
   null,
   mapDispatchToProps
 )(Body);
-
-// export default Body;

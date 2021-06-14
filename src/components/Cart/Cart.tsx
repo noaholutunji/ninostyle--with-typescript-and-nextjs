@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import Link from 'next/link';
 import styled from 'styled-components';
-import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
 import { IntProps } from '../Products/Body/Body';
 import {
   removeItem,
@@ -15,11 +13,9 @@ import {
   MDBCard,
   MDBCardBody,
   MDBCol,
-  // MDBTooltip,
   MDBTable,
   MDBTableBody,
   MDBTableHead,
-  // MDBInput,
   MDBBtn
 } from 'mdbreact';
 
@@ -43,10 +39,12 @@ export const Cart = (props: IntProps) => {
   const handleRemove = (product: {}) => {
     props.removeItem(product);
   };
+
   //to add the quantity
   const handleAddQuantity = (product: {}) => {
     props.addQuantity(product);
   };
+
   //to substruct from the quantity
   const handleSubtractQuantity = (product: {}) => {
     props.subtractQuantity(product);

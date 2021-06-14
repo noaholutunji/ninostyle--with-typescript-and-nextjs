@@ -1,11 +1,5 @@
 import React from 'react';
 import { MDBContainer, MDBFooter } from 'mdbreact';
-import styled from 'styled-components';
-
-// const FooterStyle = styled(MDBFooter)`
-//   position: fixed;
-//   width: 100%;
-// `;
 
 const Footer = () => {
   return (
